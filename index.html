@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="sub cont1">
+        <div class="ground ground1"></div>
+        <div class="box box1">BOX1</div>
+      </div>
+
+      <div class="sub cont2">
+        <div class="ground ground1"></div>
+        <div class="box box2">BOX1</div>
+      </div>
+    </section>
+
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background: rgb(181, 156, 182);
+        background: linear-gradient(
+          137deg,
+          rgba(121, 15, 122, 1) 22%,
+          rgb(194, 75, 75) 51%,
+          rgb(206, 114, 28) 74%
+        );
+        border-radius: 10px;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      .sub {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(8, 71, 50);
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      .ground{
+          background-color: #FF1361;
+          width: 80%;
+          height: 80%;
+          border: 1px solid black;
+          cursor: pointer;
+      }
+      .box {
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+        position: absolute;
+      }
+
+      .sub:hover .box{
+        transform: translateY(-10px);
+        transition: all 300ms;
+      }
+    </style>
+  </body>
+</html>
